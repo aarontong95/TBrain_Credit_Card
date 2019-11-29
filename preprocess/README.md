@@ -1,5 +1,5 @@
 # Feature Explanation
-For the raw features explanation, please take a look [here](https://github.com/aarontong95/TBrain_Credit_Card/blob/master/data/dataset_description.pdf)
+For the explanation of raw features, please take a look [here](https://github.com/aarontong95/TBrain_Credit_Card/blob/master/data/dataset_description.pdf)
 ## Transaction Frequency Feautres 
 * cano_days_txkey_count 
   * The number of times of transaction during the period(30 days)
