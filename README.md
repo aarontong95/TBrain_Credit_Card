@@ -1,2 +1,10 @@
 # TBrain_Credit_Card
-The competition can be found via the link: https://tbrain.trendmicro.com.tw/Competitions/Details/10 I was ranked 3rd among 1366 teams with this solution.
+The competition can be found via the link: https://tbrain.trendmicro.com.tw/Competitions/Details/10. I was ranked 3rd among 1366 teams with this solution.
+
+## ENVIRONMENT
+* python3.6
+
+## Install
+<pre>
+pip install -r requirements.txt
+</pre>
