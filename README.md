@@ -21,3 +21,4 @@ pip install -r requirements.txt
 * These four features may not worked in real world since we don't suppose have the label.
 * The each of other four models is trained by the base features plus one special feature.
 * If the transaction in testing meets the conditions of special features, that transaction is predicted by the corresponding special model. Otherwise the transaction is predicted by the base model.
+* You may take a look [here](https://github.com/aarontong95/TBrain_Credit_Card/tree/master/preprocess) for the features explanation.
