@@ -1,6 +1,6 @@
 # Feature Explanation
 For the explanation of raw features, please take a look [here](https://github.com/aarontong95/TBrain_Credit_Card/blob/master/data/dataset_description.pdf)
-## Transaction Frequency Feautres 
+## Transaction Frequency Features 
 * cano_days_txkey_count 
   * The number of times of transaction during the period(30 days)
 * cano_locdt_txkey_count
@@ -9,7 +9,7 @@ For the explanation of raw features, please take a look [here](https://github.co
   * The number of times of transaction for the merchant(mchno) during the period(30 days)
                                     
 
-## Time Feautres 
+## Time Features 
 * last_time_days
   * The time(loctm) difference between the transaction and previous transaction
 * next_time_days
@@ -17,13 +17,13 @@ For the explanation of raw features, please take a look [here](https://github.co
 * cano_locdt_global_time_std 
   * The standard deviation of the transaction time(loctm) during the day(locdt)             
 
-## Changing Card Feautres
+## Changing Card Features
 * diff_locdt_with_last_trans_cano
   * The days(locdt) difference between the transaction and the last transaction with same card(cano)
 * diff_locdt_of_two_card
   * The days(locdt) difference between cardA(canoA) and cardB(canoB) with same user(bacno)
 
-## Transaction Amount(conam) Feautres 
+## Transaction Amount(conam) Features 
 * cano_locdt_conam_min
   * The minimum amount(conam) of transaction of the card(cano) during the day(locdt)
 * cano_locdt_conam_max
@@ -37,7 +37,7 @@ For the explanation of raw features, please take a look [here](https://github.co
 * cano_days_mchno_index
   * The n-th transaction with same card(cano) and merchant(mchno)
 
-## Special Feautures
+## Special Features
 * mchno_in_normal_mchno_list
   * Whitelist of merchant(mchno) with same user(bacno)
 * mchno_in_fraud_mchno_list
