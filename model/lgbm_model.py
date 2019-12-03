@@ -67,7 +67,7 @@ class LGBM_Model:
                     )
 
             oof_preds_LGBM[valid_idx] += self.clf.predict_proba(valid_x)[:, 1]
-#                sub_preds_LGBM += self.clf.predict_proba(test)[:, 1]/ (folds.n_splits)
+#             sub_preds_LGBM += self.clf.predict_proba(test)[:, 1]/ (folds.n_splits)
             df_sub_preds_LGBM['fold_{}'.format(n_fold)] = self.clf.predict_proba(test)[:, 1]
             
             df_fold_importance = pd.DataFrame()
