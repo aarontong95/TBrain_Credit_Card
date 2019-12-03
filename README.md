@@ -14,9 +14,12 @@ The competition can be found via the link: https://tbrain.trendmicro.com.tw/Comp
 pip install -r requirements.txt
 </pre>
 
+## Run
+The whole process is run in [main.ipynb](https://github.com/aarontong95/TBrain_Credit_Card/blob/master/main.ipynb).
+
 ## Model Explanation
 * There are 5 models in total. 
-* The base model created by the base features which contain 20 raw features and 13 preprocessed features.
+* The base model is created by the base features which contain 20 raw features and 13 preprocessed features.
 * Since there are some users(bacno) in both training and testing set, I created other 4 special features captured the information of the label.
 * These four features may not worked in real world since we don't suppose have the label.
 * The each of other four models is trained by the base features plus one special feature.
