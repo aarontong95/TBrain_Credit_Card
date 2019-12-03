@@ -1,5 +1,6 @@
 def generate_statistic(df):
-
+    
+    df = df.copy()
     df['mean'] = df.mean(axis = 1)
     df['max'] = df.max(axis = 1)
     df['min'] = df.min(axis = 1)
