@@ -17,7 +17,7 @@ For the explanation of raw features, please take a look [here](https://github.co
 * cano_locdt_global_time_std 
   * The standard deviation of the transaction time(loctm) during the day(locdt)             
 
-## Change Card Feautres
+## Changing Card Feautres
 * diff_locdt_with_last_trans_cano
   * The days(locdt) difference between the transaction and the last transaction with same card(cano)
 * diff_locdt_of_two_card
