@@ -22,3 +22,9 @@ pip install -r requirements.txt
 * The each of other four models is trained by the base features plus one special feature.
 * If the transaction in testing meets the conditions of special features, that transaction is predicted by the corresponding special model. Otherwise the transaction is predicted by the base model.
 * You may take a look [here](https://github.com/aarontong95/TBrain_Credit_Card/tree/master/preprocess) for the features explanation.
+
+## What made my model successful? 
+* I just create few new features which makes my models simple and have better generalizaiton.
+* I replace the value of categorical features of training set with NA if the value is not in testing set so that the model will not learn something useless when apply in testing set. The model can learn more focus on the value which exists in testing set. Here is the [script](https://github.com/aarontong95/TBrain_Credit_Card/blob/master/preprocess/preprocess_train_test_split.py).
+* I split the training set by GroupKFold which i group the sample by user(bacno) so i may have better early stopping which prevents overfitting and underfitting. Here is the [script](https://github.com/aarontong95/TBrain_Credit_Card/blob/master/util/generate_X_y.py).
+* Since some of the predictions of testing set are very extreme between folds, i drop the prediction of the fold if it is out of 1 standard deviation boundary. You may find it in [main.ipynb](https://github.com/aarontong95/TBrain_Credit_Card/blob/master/main.ipynb).
