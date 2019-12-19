@@ -71,20 +71,6 @@ class Cat_Model:
 
         return oof_preds_LGBM, df_sub_preds_LGBM, self.clf
 
-    @staticmethod 
-    def lgb_f1(truth, predictions):  
-        
-        pred_labels = np.where(predictions>=0.275, 1, 0)
-        f1 = f1_score(truth, pred_labels)
-        
-        return ("F1", f1, True)
-    
-    @staticmethod
-    def lgbm_averge_precision(truth, predictions):  
-        
-        aps = average_precision_score(truth, predictions)
-        
-        return ("Averge Precision", aps, True)
 
 
 
