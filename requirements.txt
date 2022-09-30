@@ -4,6 +4,6 @@ scikit_learn==0.21.3
 pandas==0.25.1
 lightgbm==2.2.3
 shap==0.32.0
-joblib==0.13.2
+joblib==1.2.0
 seaborn==0.9.0
 jupyter==1.0.0
